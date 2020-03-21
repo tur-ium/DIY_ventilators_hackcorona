@@ -1,14 +1,16 @@
-with target_country as (
+create or replace
+function nearest_countries(input_country varchar, top varchar) returns table (
+country varchar ,
+distance float8 ) as $$ begin return query with target_country as (
 select
 	capital_latitude as target_latitude,
 	capital_longitude as target_longitude
 from
 	capitals
 where
-	country_name = 'France')
+	country_name = input_country)
 select
-	capital_name,
-	country_name,
+	country_name ,
 	calculate_distance((
 	select
 		target_latitude
@@ -26,4 +28,8 @@ from
 	capitals
 order by
 	distance
-limit 10;
+limit cast (top as integer);
+
+end;
+
+$$ language 'plpgsql';
