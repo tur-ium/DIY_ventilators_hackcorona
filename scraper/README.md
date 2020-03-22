@@ -1,7 +1,4 @@
-# DIY_ventilators_hackcorona
-
-This repository contains all the code for the Hack Corona hackaton, with the objective of helping reducing the impact of the COVID-19 in society.
-
-The objective  was to develop a chatbox to help engineers that want to build a DIY ventilator by giving instructions, list components, and components availability information. Ventilators are a key piece of emergency medical equipment which is needed in great quantities in this crisis.
-
-
+To generate the file run the command from /PATH_WHERE_PROJECT_IS_CHECKOUT/scraper
+1. mvn clean package
+2. mvn exec:java -Dexec.mainClass="com.scraper.Scraper" -Dexec.args="PATH_WHERE_YOU_WANTED_CSV_FILE_TO_GENERATE"
+for eg :- mvn exec:java -Dexec.mainClass="com.scraper.Scraper" -Dexec.args="/Users/vivmaheshwari/"
