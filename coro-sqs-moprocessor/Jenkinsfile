@@ -1,0 +1,14 @@
+pipeline { 
+  agent any 
+  stages { 
+    stage('deploy aspen-kiwi') { 
+      when { branch 'aspen-kiwi' }
+      environment {
+        LAST_COMMITTER = sh (returnStdout: true, script: "git log --format='%ae' | head -1").trim()
+      }
+      steps { 
+        sh './build.sh aspen-kiwi' 
+     } 
+    } 
+  } 
+}

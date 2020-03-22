@@ -1,0 +1,15 @@
+{
+  "name": "coro-sqs-moprocessor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "ssh://git-codecommit.ap-southeast-1.amazonaws.com/v1/repos/coro-sqs-moprocessor",
+  "author": "Jonathan Jie <jonathan@scrio.ai>",
+  "license": "MIT",
+  "optionalDependencies": {
+    "coro-lib": "git+ssh://git-codecommit.ap-southeast-1.amazonaws.com/v1/repos/coro-lib#aspen-kiwi"
+  },
+  "dependencies": {
+    "dialogflow": "^1.2.0",
+    "pb-util": "^0.1.3"
+  }
+}

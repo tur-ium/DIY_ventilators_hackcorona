@@ -1,0 +1,10 @@
+{
+    "about": {
+        "text": "Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The disease was first identified in 2019 in Wuhan, China, and has spread globally, resulting in the 2019–20 coronavirus pandemic.\n\nSource: Wikipedia",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Novel_Coronavirus_SARS-CoV-2.jpg/600px-Novel_Coronavirus_SARS-CoV-2.jpg"
+    },
+    "symptoms": {
+        "text": "Those infected with the virus may either be asymptomatic or develop flu-like symptoms that include fever, cough and shortness of breath. Diarrhoea and upper respiratory symptoms such as sneezing, runny nose, or sore throat are less common. Cases can progress to pneumonia, multi-organ failure and death in the most vulnerable.\n\nThe incubation period ranges from two to 14 days, with an estimated median incubation period of five to six days, according to the World Health Organization (WHO). The median time from onset to clinical recovery for mild cases is approximately 2 weeks and is 3-6 weeks for people with severe or critical disease. Preliminary data suggests that the time period from onset to the development of severe disease, including hypoxia, is 1 week. Among people who have died, the time from symptom onset to outcome ranges from 2-8 weeks.\n\nSource: Wikipedia",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Symptoms_of_coronavirus_disease_2019_2.0.svg/620px-Symptoms_of_coronavirus_disease_2019_2.0.svg.png"
+    }
+}
