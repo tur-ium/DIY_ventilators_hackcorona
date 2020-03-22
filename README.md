@@ -9,8 +9,8 @@ In order to archive this objective, we created a bot to help the engineers get t
 
 The code that can be found at this repository follow this structure:
 
--SQL = SQL code used to create the schema of the data werehouse and other functions
--scraper = The code of the scraper used to adquire the data
--coro-sqs-moprocessor = Kernel code of the telegram bot.
+- SQL = SQL code used to create the schema of the data werehouse and other functions
+- scraper = The code of the scraper used to adquire the data
+- coro-sqs-moprocessor = Kernel code of the telegram bot.
 
 
