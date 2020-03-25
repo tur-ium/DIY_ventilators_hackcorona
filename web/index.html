@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/index.css" />
+<title>DIY Ventilator Scout - Component search</title>
+</head>
+<body>
+<script src="./scripts/jquery-3.4.1.slim.min.js"></script>
+<script src="./scripts/table-sortable.js"></script>
+<input type="text" placeholder="Search here" id="search" />
+<div id="componenttable">
+</div>
+<div class="credits">
+  <p>Built using Ravi Dhiman's <a href="https://table-sortable.now.sh" target="_blank">Table-Sortable</a>
+</div>
+<script>
+var q = new XMLHttpRequest();
+q.open("GET","./component.json");
+q.responseType="json";
+q.send();
+q.onreadystatechange = function(){
+  console.log("Ready state: "+this.readyState)
+  if(this.readyState==4 && this.status==200){
+  data = q.response;
+  initTable(data)
+}
+}
+function initTable(data){
+  console.log("data\n"+data)
+    var table = $("#componenttable").tableSortable({
+    data:data,
+    columns: {component_name:"Component Name",quantity:"Quantity",diy_ventilator_name:"Ventilator Name",distributor_name:"Distributor",inventory:"Inventory",region:"Region",inventory_date:"Inventory Date",lead_time:"Lead Time",price:"Price",link:"Link"},
+    responsive: {
+      1200:{
+        columns: {component_name:"Component",quantity:"Quantity"}
+      }
+    },
+    searchField: "#search",
+    rowsPerPage:10,
+    pagination: true
+})
+}
+</script>
+</body>
+</html>
