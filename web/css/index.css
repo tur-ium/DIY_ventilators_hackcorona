@@ -1,0 +1,30 @@
+#componenttable{
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 11
+}
+#componenttable{
+  background: #eee
+}
+#componenttable thead{
+  background: #f00
+}
+#componenttable table{
+  border-collapse: collapse;
+  width:100%
+}
+#componenttable th, td{
+  border-bottom:  medium solid #fff;
+  padding-bottom: 10px;
+}
+.gs-pagination{
+  background-color: #f4f4f4
+}
+.col-md-6{
+  text-align: : right
+}
+.credits{
+  font-style: italic;
+  font-size: 11;
+  font-family: monospace;
+}
